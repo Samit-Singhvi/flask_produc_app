@@ -16,7 +16,6 @@ PyAutoGUI==0.9.54
 pandas==2.1.1
 selenium==4.14.0
 wheel==0.37.1
-django-celery==3.3.1
 demjson3==3.0.6 
 setuptools==58.0.0
 anyjson==0.3.3 
