@@ -7,3 +7,4 @@ requests==2.31.0
 Werkzeug==3.0.4
 marshmallow==3.22.0
 Flask-SQLAlchemy==3.0.2
+guinicorn==20.1.0
