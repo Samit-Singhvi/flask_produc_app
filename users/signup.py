@@ -7,7 +7,6 @@ from flasgger import swag_from
 from helper import create_specs_from_schema_user,validateswaggerinput,SECRET_KEY,DB_CONFIG
 from schemas import SignupSchema
 from models import Users,db
-import pyautogui
 
 def is_valid_password(password="", username=""):
     password_regex = r"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!_#%*?&])[A-Za-z\d@$!%*?&]{8,}$"
