@@ -1,6 +1,5 @@
 from flask_restful import Resource
 from flask import request,jsonify
-import mysql.connector
 from flasgger import swag_from
 from helper import create_specs_from_schema_product,validateswaggerinput,DB_CONFIG,token_required
 from schemas import GetProdSchema

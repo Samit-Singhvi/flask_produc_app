@@ -1,10 +1,9 @@
 from flask_restful import Resource
 from flask import request,jsonify
 from helper import create_specs_from_schema_product,token_required,validateswaggerinput
-from schemas import AddToCartSchema,PurchaseSchema
+from schemas import PurchaseSchema
 from flasgger import swag_from
-from models import Products,CartPurchase,Users,db,Purchase,Coupons
-from datetime import datetime
+from models import Products,Users,Coupons
 import random
 import json
 import string
@@ -152,7 +151,7 @@ class AfterPayment(Resource):
             # Only verify the event if there is an endpoint secret defined
             # Otherwise use the basic event deserialized with json
             sig_header = request.headers.get('stripe-signature')
-            print("/////////////////////", sig_header)
+            print(sig_header)
             try:
                 event = stripe.Webhook.construct_event(
                     payload, sig_header, endpoint_secret

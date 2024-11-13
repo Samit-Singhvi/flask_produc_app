@@ -4,8 +4,6 @@ from models import Users,CartPurchase,Purchase,Products,db
 from helper import create_specs_from_schema_user,token_required
 from schemas import ProfileSchema
 from flasgger import swag_from
-import requests
-from products.favorite import GetFavorites
 
 
 class Profile(Resource):

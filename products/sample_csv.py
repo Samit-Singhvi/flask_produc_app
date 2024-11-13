@@ -1,5 +1,5 @@
 import csv
-from flask import Response,request,jsonify
+from flask import Response
 from flask_restful import Resource
 from flasgger import swag_from
 from helper import create_specs_from_schema_product,token_required
